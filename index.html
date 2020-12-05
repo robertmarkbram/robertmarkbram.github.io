@@ -2,17 +2,70 @@
 layout: default
 ---
 
+<h1>Rob Programmer Posts</h1>
+
+<p>Most recent posts.</p>
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.categories.technical limit:2 %}
     <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="entry">
         {{ post.excerpt }}
       </div>
-
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
+
+<p>Posts by date.</p>
+{% assign technicalPostsByYear = site.categories.technical | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% for year in technicalPostsByYear %}
+  <details>
+    <summary>{{ year.name }}</summary>
+    {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+    {% for month in postsByMonth %}
+      <details>
+        <summary>{{ month.name }}</summary>
+        <ul>
+          {% for post in month.items %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endfor %}
+  </details>
+{% endfor %}
+
+<h1>Personal Posts</h1>
+
+<p>Most recent posts.</p>
+<div class="posts">
+  {% for post in site.categories.personal limit:2 %}
+    <article class="post">
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
+
+<p>Posts by date.</p>
+{% assign personalPostsByYear = site.categories.personal | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% for year in personalPostsByYear %}
+  <details>
+    <summary>{{ year.name }}</summary>
+    {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+    {% for month in postsByMonth %}
+      <details>
+        <summary>{{ month.name }}</summary>
+        <ul>
+          {% for post in month.items %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endfor %}
+  </details>
+{% endfor %}
