@@ -73,45 +73,46 @@ public String searchString(final String regex, final String stringToMatchAgainst
 <p>This is the test data I am using.</p>
 
 <table class="example">
-<tr>
-   <th>Test label</th>
-   <th>Regular expression</th>
-   <th>String to apply regex to</th>
-   <th>Expected first group</th>
-</tr>
-<tr>
-   <td>Any string matches any string.</td>
-   <td>(.*)</td>
-   <td>xyz</td>
-   <td>xyz</td>
-</tr>
-</tr>
-<tr>
-   <td>Pick year digits out of a date.</td>
-   <td>[0-9]{2}/[0-9]{2}/([0-9]{4})</td>
-   <td>31/12/2032</td>
-   <td>2032</td>
-</tr>
-<tr>
-   <td>No digits found.</td>
-   <td>[0-9]+</td>
-   <td>not a digit</td>
-   <td>null</td>
-</tr>
-<tr>
-   <td>First two words.</td>
-   <td>(?<firstTwoWords>\\w+ \\w+) .*</td>
-   <td>abc xyz one two</td>
-   <td>abc xyz</td>
-</tr>
-<tr>
-   <td>Bad regex.</td>
-   <td>([0-9+)</td>
-   <td>123</td>
-   <td>
-      PatternSyntaxException: (?s)Unclosed character class.*<br><br>
-      <small><em>(This test case will throw an exception because the regular expression is invalid.)</em></small>
-   </td>
+   <tr>
+      <th>Test label</th>
+      <th>Regular expression</th>
+      <th>String to apply regex to</th>
+      <th>Expected first group</th>
+   </tr>
+   <tr>
+      <td>Any string matches any string.</td>
+      <td>(.*)</td>
+      <td>xyz</td>
+      <td>xyz</td>
+   </tr>
+   </tr>
+   <tr>
+      <td>Pick year digits out of a date.</td>
+      <td>[0-9]{2}/[0-9]{2}/([0-9]{4})</td>
+      <td>31/12/2032</td>
+      <td>2032</td>
+   </tr>
+   <tr>
+      <td>No digits found.</td>
+      <td>[0-9]+</td>
+      <td>not a digit</td>
+      <td>null</td>
+   </tr>
+   <tr>
+      <td>First two words.</td>
+      <td>(?<firstTwoWords>\\w+ \\w+) .*</td>
+      <td>abc xyz one two</td>
+      <td>abc xyz</td>
+   </tr>
+   <tr>
+      <td>Bad regex.</td>
+      <td>([0-9+)</td>
+      <td>123</td>
+      <td>
+         PatternSyntaxException: (?s)Unclosed character class.*<br><br>
+         <small><em>(This test case will throw an exception because the regular expression is invalid.)</em></small>
+      </td>
+   </tr>
 </table>
 
 <p>As described earlier, the regular expressions here use <a href="https://docs.oracle.com/javase/tutorial/essential/regex/groups.html">capturing groups</a>. In the fourth data set, I have also used <a href="http://farenda.com/java/java-8-regex-match-group-named-capturing-groups/">named capturing groups</a> - a cool regex feature added to Java in JDK 8.</p>
