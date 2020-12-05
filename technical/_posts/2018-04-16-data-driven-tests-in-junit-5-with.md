@@ -175,11 +175,11 @@ public void testFilesFromDirectoriesAndPattern(final String label, final String 
 
 <p>This is what you see in Eclipse when running this class as a JUnit test.</p>
 
-![eclipse-running-junit.png](images/eclipse-running-junit.png)
+![eclipse-running-junit.png](/assets/technical/images/2018/eclipse-running-junit.png)
 
 <p>One of the most important advantages of JUnit in Eclipse over TestNG is that you can run individual test cases by right-clicking on the one you want to re-run and select "Run" or "Debug" (<a href="http://robertmarkbramprogrammer.blogspot.com.au/2018/04/debug-testng-data-driven-tests-when-you.html">TestNG would re-run the whole lot</a>).</p>
 
-![eclipse-run-individual-test.png](images/eclipse-run-individual-test.png)
+![eclipse-run-individual-test.png](/assets/technical/images/2018/eclipse-run-individual-test.png)
 
 <p>Here is version 1 the full test case, incorporating the method being tested.</p>
 
@@ -303,7 +303,7 @@ public void testFilesFromDirectoriesAndPattern(final String label, final String 
 
 <p>The unit test now passes in all cases.</p>
 
-![eclipse-all-tests-pass.png](images/eclipse-all-tests-pass.png)
+![eclipse-all-tests-pass.png](/assets/technical/images/2018/eclipse-all-tests-pass.png)
 
 <p>Here is the final version of the full test case, incorporating exception testing.</p>
 
