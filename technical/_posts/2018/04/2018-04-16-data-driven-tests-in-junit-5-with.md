@@ -85,7 +85,6 @@ public String searchString(final String regex, final String stringToMatchAgainst
       <td>xyz</td>
       <td>xyz</td>
    </tr>
-   </tr>
    <tr>
       <td>Pick year digits out of a date.</td>
       <td>[0-9]{2}/[0-9]{2}/([0-9]{4})</td>
