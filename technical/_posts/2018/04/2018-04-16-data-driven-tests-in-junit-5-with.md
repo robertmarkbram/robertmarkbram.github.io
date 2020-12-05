@@ -99,7 +99,7 @@ public String searchString(final String regex, final String stringToMatchAgainst
    </tr>
    <tr>
       <td>First two words.</td>
-      <td>(?<firstTwoWords>\\w+ \\w+) .*</td>
+      <td>(?&lt;firstTwoWords&gt;\\w+ \\w+) .*</td>
       <td>abc xyz one two</td>
       <td>abc xyz</td>
    </tr>
