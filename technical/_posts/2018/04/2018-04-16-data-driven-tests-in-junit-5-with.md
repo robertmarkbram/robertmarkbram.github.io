@@ -99,7 +99,7 @@ public String searchString(final String regex, final String stringToMatchAgainst
    </tr>
    <tr>
       <td>First two words.</td>
-      <td>(?<firstTwoWords>\\w+ \\w+) .*</td>
+      <td>(?<firstTwoWords>\\w+ \\w+) .*&lt;/td&gt;
       <td>abc xyz one two</td>
       <td>abc xyz</td>
    </tr>
@@ -108,7 +108,7 @@ public String searchString(final String regex, final String stringToMatchAgainst
       <td>([0-9+)</td>
       <td>123</td>
       <td>
-         PatternSyntaxException: (?s)Unclosed character class.*<br><br>
+         PatternSyntaxException: (?s)Unclosed character class.*<br /><br />
          <small><em>(This test case will throw an exception because the regular expression is invalid.)</em></small>
       </td>
    </tr>
