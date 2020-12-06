@@ -7,7 +7,6 @@ date: 2018-04-16 01:01:01 +1000
 
 Data driven tests in JUnit 5 with exception handling. [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2018/04/data-driven-tests-in-junit-5-with.html).
 
-
 <style>
 .example {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -195,12 +194,12 @@ public class JunitDataDrivenTest {
 
    /**
     * @return test data. Each set of arguments should consist of
-    *         <ol>
-    *            <li>test label</li>
-    *            <li>regex</li>
-    *            <li>string we apply the regex to</li>
-    *            <li>first group matched by the regex</li>
-    *         </ol>
+    *         &lt;ol&gt;
+    *            &lt;li&gt;test label&lt;/li&gt;
+    *            &lt;li&gt;regex&lt;/li&gt;
+    *            &lt;li&gt;string we apply the regex to&lt;/li&gt;
+    *            &lt;li&gt;first group matched by the regex&lt;/li&gt;
+    *         &lt;/ol&gt;
     */
    @SuppressWarnings({ "unused" }) // Eclipse thinks this method is not used.
    private static Stream<Arguments> dataForTestSearchString() {
@@ -320,12 +319,12 @@ public class JunitDataDrivenTest {
 
    /**
     * @return test data. Each set of arguments should consist of
-    *         <ol>
-    *         <li>test label</li>
-    *         <li>regex</li>
-    *         <li>string we apply the regex to</li>
-    *         <li>first group matched by the regex</li>
-    *         </ol>
+    *         &lt;ol&gt;
+    *            &lt;li&gt;test label&lt;/li&gt;
+    *            &lt;li&gt;regex&lt;/li&gt;
+    *            &lt;li&gt;string we apply the regex to&lt;/li&gt;
+    *            &lt;li&gt;first group matched by the regex&lt;/li&gt;
+    *         &lt;/ol&gt;
     */
    @SuppressWarnings({ "unused" }) // Eclipse thinks this method is not used.
    private static Stream<Arguments> dataForTestSearchString() {
