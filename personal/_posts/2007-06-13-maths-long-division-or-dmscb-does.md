@@ -5,7 +5,7 @@ tags: [math]
 date: 2007-06-13 01:01:01 +1000
 ---
 
-Maths: Long Division, or DMSCB - Does McDonalds Sell Cheese Burgers. How long division is taught, because my daughter needed to know! [Blogger post](https://robertmarkbram.blogspot.com/2007/06/maths-long-division-or-dmscb-does.html).
+Maths: Long Division, or DMSCB - Does McDonalds Sell Cheese Burgers. How long division is taught, because my daughter needed to know! [Mirror of this Blogger post](https://robertmarkbram.blogspot.com/2007/06/maths-long-division-or-dmscb-does.html).
 
 I might be a <a href="http://RobertMarkBramProgrammer.blogspot.com">programmer</a>, but it was recently revealed to me that I couldn't remember how I was taught long division in school.
 
