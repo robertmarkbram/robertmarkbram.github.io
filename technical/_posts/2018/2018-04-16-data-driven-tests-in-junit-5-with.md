@@ -41,8 +41,7 @@ Data driven tests in JUnit 5 with exception handling. [Mirror of this Blogger po
 
 <p>In this example, I am testing the ability to use regular expressions in Java: specifically the ability to find the first <a href="https://docs.oracle.com/javase/tutorial/essential/regex/groups.html">capturing group</a>.</p>
 
-```java
-// Method under test that applies a regex to a string, returning the first group
+<pre><code class='java'>// Method under test that applies a regex to a string, returning the first group
 public String searchString(final String regex, final String stringToMatchAgainst) {
    final Pattern pattern = Pattern.compile(regex);
    final Matcher matcher = pattern.matcher(stringToMatchAgainst);
@@ -51,7 +50,7 @@ public String searchString(final String regex, final String stringToMatchAgainst
    }
    return null;
 }
-```
+</code></pre>
 
 <p>A bit about this method.</p>
 
@@ -127,8 +126,7 @@ public String searchString(final String regex, final String stringToMatchAgainst
 
 <p>The <code>@MethodSource</code> is arguably the most flexible because you can do so many things within a method to generate the returned data, including generating the data from an array, an enum, a CSV file, even doing a database lookup or calling some other service to get the data. My example will use <code>@MethodSource</code> and will generate a <a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/util/stream/Stream.html">stream</a> of JUnit 5 <a href="https://junit.org/junit5/docs/5.0.3/api/index.html?org/junit/jupiter/params/provider/Arguments.html">arguments</a>.</p>
 
-```java
-// A method that returns a stream of JUnit Arguments
+<pre><code class='java'>// A method that returns a stream of JUnit Arguments
 private static Stream<Arguments> dataForTestSearchString() {
    return Stream.of(//
          Arguments.of("Any string matches any string.", "(.*)", "xyz", "xyz") //
@@ -138,7 +136,7 @@ private static Stream<Arguments> dataForTestSearchString() {
          , Arguments.of("Bad regex.", "([0-9+)", "123", "PatternSyntaxException: (?s)Unclosed character class.*") //
    );
 }
-```
+</code></pre>
 
 <p>Notes about this method:</p>
 
@@ -150,8 +148,7 @@ private static Stream<Arguments> dataForTestSearchString() {
 
 <p>Here is the <code>@Test</code> method that consumes this test data.</p>
 
-```java
-// JUnit5 @Test method whose data comes from dataForTestSearchString
+<pre><code class='java'>// JUnit5 @Test method whose data comes from dataForTestSearchString
 @ParameterizedTest(name = "#{index} - [{0}]")
 @MethodSource("dataForTestSearchString")
 public void testFilesFromDirectoriesAndPattern(final String label, final String regex,
@@ -159,7 +156,7 @@ public void testFilesFromDirectoriesAndPattern(final String label, final String 
    final String actual = searchString(regex, stringToMatchAgainst);
    assertEquals(expected, actual);
 }
-```
+</code></pre>
 
 <p>Notes about this method.</p>
 
@@ -183,8 +180,7 @@ public void testFilesFromDirectoriesAndPattern(final String label, final String 
 
 <p>Here is version 1 the full test case, incorporating the method being tested.</p>
 
-```java
-// First version of the data driven test, including the method being tested
+<pre><code class='java'>// First version of the data driven test, including the method being tested
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.regex.Matcher;
@@ -253,7 +249,7 @@ public class JunitDataDrivenTest {
       return null;
    }
 }
-```
+</code></pre>
 
 <h2>Testing for exceptions</h2>
 
@@ -261,8 +257,7 @@ public class JunitDataDrivenTest {
 
 <p>As mentioned above, the last test case throws an exception because of an invalid regular expression (<code>"([0-9+)"</code> doesn't close the square brackets: it should be <code>"([0-9]+)"</code>). A normal part of unit testing should be ensuring that code throws appropriate exceptions when something goes wrong. Here is the unit test adjusted so that if our parameterized data indicates that an exception is expected, we test for it. We test for the expected exception type and have a regular expression to test the exception's message.</p>
 
-```java
-// JUnit test that checks if code throws an exception if our parameterized data indicates one is expected
+<pre><code class='java'>// JUnit test that checks if code throws an exception if our parameterized data indicates one is expected
 @ParameterizedTest(name = "#{index} - [{0}]")
 @MethodSource("dataForTestSearchString")
 public void testFilesFromDirectoriesAndPattern(final String label, final String regex,
@@ -286,7 +281,7 @@ public void testFilesFromDirectoriesAndPattern(final String label, final String 
    }
 
 }
-```
+</code></pre>
 
 <p>Notes about this method.</p>
 
@@ -307,8 +302,7 @@ public void testFilesFromDirectoriesAndPattern(final String label, final String 
 
 <p>Here is the final version of the full test case, incorporating exception testing.</p>
 
-```java
-// Final version of the data driven test including exception testing
+<pre><code class='java'>// Final version of the data driven test including exception testing
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -394,9 +388,8 @@ public class JunitDataDrivenTest {
       }
       return null;
    }
-
 }
-```
+</code></pre>
 
 <h2>Versions</h2>
 
@@ -408,30 +401,30 @@ public class JunitDataDrivenTest {
   <li><strong>Junit</strong> plugin is built in</li>
   <li>JUnit dependencies in my <strong>pom.xml</strong>:
 
-  ```xml
-  <!-- JUnit Maven dependencies -->
-  <!-- JUnit Jupiter is the API we write tests against. -->
-  <dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter-engine</artifactId>
-    <version>5.1.0</version>
-    <scope>test</scope>
-  </dependency>
-  <!-- Parameterised tests is separate download because it is currently an experimental feature. -->
-  <dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter-params</artifactId>
-    <version>5.1.0</version>
-    <scope>test</scope>
-  </dependency>
-  <!-- The engined used by the IDE to run tests. JUnit is built in to Eclipse, but apparently my version of Eclipse can&#39;t run JUnit 5 tests. -->
-  <dependency>
-    <groupId>org.junit.platform</groupId>
-    <artifactId>junit-platform-launcher</artifactId>
-    <version>1.1.0</version>
-    <scope>test</scope>
-  </dependency>
-  ```
+  <pre><code class='xml'>
+  &lt;!-- JUnit Maven dependencies --&gt;
+  &lt;!-- JUnit Jupiter is the API we write tests against. --&gt;
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+    &lt;artifactId&gt;junit-jupiter-engine&lt;/artifactId&gt;
+    &lt;version&gt;5.1.0&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+  &lt;/dependency&gt;
+  &lt;!-- Parameterised tests is separate download because it is currently an experimental feature. --&gt;
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;
+    &lt;artifactId&gt;junit-jupiter-params&lt;/artifactId&gt;
+    &lt;version&gt;5.1.0&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+  &lt;/dependency&gt;
+  &lt;!-- The engined used by the IDE to run tests. JUnit is built in to Eclipse, but apparently my version of Eclipse can&#39;t run JUnit 5 tests. --&gt;
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.junit.platform&lt;/groupId&gt;
+    &lt;artifactId&gt;junit-platform-launcher&lt;/artifactId&gt;
+    &lt;version&gt;1.1.0&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+  &lt;/dependency&gt;
+  </code></pre>
 
   </li>
 </ul>
