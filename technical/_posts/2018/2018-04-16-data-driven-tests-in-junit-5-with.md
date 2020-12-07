@@ -131,7 +131,7 @@ private static Stream<Arguments> dataForTestSearchString() {
          Arguments.of("Any string matches any string.", "(.*)", "xyz", "xyz") //
          , Arguments.of("Pick year digits out of a date.", "[0-9]{2}/[0-9]{2}/([0-9]{4})", "31/12/2032", "2032") //
          , Arguments.of("No digits found.", "[0-9]+", "not a digit", null) //
-         , Arguments.of("First two words.", "(?<firstTwoWords>\\w+ \\w+) .*", "abc xyz one two", "abc xyz") //
+         , Arguments.of("First two words.", "(?&lt;firstTwoWords&gt;\\w+ \\w+) .*", "abc xyz one two", "abc xyz") //
          , Arguments.of("Bad regex.", "([0-9+)", "123", "PatternSyntaxException: (?s)Unclosed character class.*") //
    );
 }
@@ -207,7 +207,7 @@ public class JunitDataDrivenTest {
             Arguments.of("Any string matches any string.", "(.*)", "xyz", "xyz") //
             , Arguments.of("Pick year digits out of a date.", "[0-9]{2}/[0-9]{2}/([0-9]{4})", "31/12/2032", "2032") //
             , Arguments.of("No digits found.", "[0-9]+", "not a digit", null) //
-            , Arguments.of("First two words.", "(?<firstTwoWords>\\w+ \\w+) .*", "abc xyz one two", "abc xyz") //
+            , Arguments.of("First two words.", "(?&lt;firstTwoWords&gt;\\w+ \\w+) .*", "abc xyz one two", "abc xyz") //
             , Arguments.of("Bad regex.", "([0-9+)", "123", "PatternSyntaxException: (?s)Unclosed character class.*") //
       );
    }
@@ -332,7 +332,7 @@ public class JunitDataDrivenTest {
             Arguments.of("Any string matches any string.", "(.*)", "xyz", "xyz") //
             , Arguments.of("Pick year digits out of a date.", "[0-9]{2}/[0-9]{2}/([0-9]{4})", "31/12/2032", "2032") //
             , Arguments.of("No digits found.", "[0-9]+", "not a digit", null) //
-            , Arguments.of("First two words.", "(?<firstTwoWords>\\w+ \\w+) .*", "abc xyz one two", "abc xyz") //
+            , Arguments.of("First two words.", "(?&lt;firstTwoWords&gt;\\w+ \\w+) .*", "abc xyz one two", "abc xyz") //
             , Arguments.of("Bad regex.", "([0-9+)", "123", "PatternSyntaxException: (?s)Unclosed character class.*") //
       );
    }
