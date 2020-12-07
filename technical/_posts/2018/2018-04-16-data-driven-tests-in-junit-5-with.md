@@ -126,7 +126,7 @@ public String searchString(final String regex, final String stringToMatchAgainst
 <p>The <code>@MethodSource</code> is arguably the most flexible because you can do so many things within a method to generate the returned data, including generating the data from an array, an enum, a CSV file, even doing a database lookup or calling some other service to get the data. My example will use <code>@MethodSource</code> and will generate a <a href="https://docs.oracle.com/javase/8/docs/api/index.html?java/util/stream/Stream.html">stream</a> of JUnit 5 <a href="https://junit.org/junit5/docs/5.0.3/api/index.html?org/junit/jupiter/params/provider/Arguments.html">arguments</a>.</p>
 
 <pre><code class='java'>// A method that returns a stream of JUnit Arguments
-private static Stream<Arguments> dataForTestSearchString() {
+private static Stream&lt;Arguments&gt; dataForTestSearchString() {
    return Stream.of(//
          Arguments.of("Any string matches any string.", "(.*)", "xyz", "xyz") //
          , Arguments.of("Pick year digits out of a date.", "[0-9]{2}/[0-9]{2}/([0-9]{4})", "31/12/2032", "2032") //
@@ -202,7 +202,7 @@ public class JunitDataDrivenTest {
     *         &lt;/ol&gt;
     */
    @SuppressWarnings({ "unused" }) // Eclipse thinks this method is not used.
-   private static Stream<Arguments> dataForTestSearchString() {
+   private static Stream&lt;Arguments&gt; dataForTestSearchString() {
       return Stream.of(//
             Arguments.of("Any string matches any string.", "(.*)", "xyz", "xyz") //
             , Arguments.of("Pick year digits out of a date.", "[0-9]{2}/[0-9]{2}/([0-9]{4})", "31/12/2032", "2032") //
@@ -327,7 +327,7 @@ public class JunitDataDrivenTest {
     *         &lt;/ol&gt;
     */
    @SuppressWarnings({ "unused" }) // Eclipse thinks this method is not used.
-   private static Stream<Arguments> dataForTestSearchString() {
+   private static Stream&lt;Arguments&gt; dataForTestSearchString() {
       return Stream.of(//
             Arguments.of("Any string matches any string.", "(.*)", "xyz", "xyz") //
             , Arguments.of("Pick year digits out of a date.", "[0-9]{2}/[0-9]{2}/([0-9]{4})", "31/12/2032", "2032") //
