@@ -1,5 +1,5 @@
 layout: post
-title: Eclipse: content assist or completion?
+title: "Eclipse: content assist or completion?"
 tags: [content assist,content completion,eclipse]
 date: 2018-04-16 02:01:01 +1000
 ---
