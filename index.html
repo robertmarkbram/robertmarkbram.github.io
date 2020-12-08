@@ -20,11 +20,11 @@ layout: default
 <p>Posts by date.</p>
 {% assign technicalPostsByYear = site.categories.technical | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in technicalPostsByYear %}
-  <details>
+  <details class="posts-year">
     <summary>{{ year.name }}</summary>
     {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
     {% for month in postsByMonth %}
-      <details>
+      <details class="posts-month">
         <summary>{{ month.name }}</summary>
         <ul>
           {% for post in month.items %}
@@ -54,11 +54,11 @@ layout: default
 <p>Posts by date.</p>
 {% assign personalPostsByYear = site.categories.personal | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in personalPostsByYear %}
-  <details>
+  <details class="posts-year">
     <summary>{{ year.name }}</summary>
     {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
     {% for month in postsByMonth %}
-      <details>
+      <details class="posts-month">
         <summary>{{ month.name }}</summary>
         <ul>
           {% for post in month.items %}
