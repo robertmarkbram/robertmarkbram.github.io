@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Eclipse: content assist or completion?"
 tags: [content assist,content completion,eclipse]
