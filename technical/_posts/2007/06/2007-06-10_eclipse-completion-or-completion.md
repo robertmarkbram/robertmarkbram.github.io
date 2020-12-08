@@ -2,7 +2,7 @@
 layout: post
 title: "Eclipse: content assist or completion?"
 tags: [content assist,content completion,eclipse]
-date: 2018-04-16 02:01:01 +1000
+date: 2007-06-10 02:01:01 +1000
 ---
 
 > Eclipse: content assist or completion? [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2007/06/eclipse-completion-or-completion.html).
