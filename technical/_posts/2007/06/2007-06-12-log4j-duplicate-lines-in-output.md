@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Log4J: duplicate Lines in output?"
-tags: [content assist,content completion,eclipse]
+tags: [log4j]
 date: 2007-06-12 01:01:01 +1000
 ---
 
