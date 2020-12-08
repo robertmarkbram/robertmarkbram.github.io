@@ -5,7 +5,7 @@ tags: [java, junit, data driven tests]
 date: 2018-04-16 01:01:01 +1000
 ---
 
-Data driven tests in JUnit 5 with exception handling. [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2018/04/data-driven-tests-in-junit-5-with.html).
+> Data driven tests in JUnit 5 with exception handling. [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2018/04/data-driven-tests-in-junit-5-with.html).
 
 <style>
 .example {
@@ -171,11 +171,13 @@ public void testFilesFromDirectoriesAndPattern(final String label, final String 
 
 <p>This is what you see in Eclipse when running this class as a JUnit test.</p>
 
-![eclipse-running-junit.png](/assets/technical/images/2018/eclipse-running-junit.png)
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://4.bp.blogspot.com/-wz_62ooLgsY/WtNbZcdHI-I/AAAAAAADAYg/3JD2QB-MwWwp4xqzYd1w1O4kJaKaaaakgCEwYBhgL/s1600/2018-04-16%2B00_00_51-CygwinJavaUtils_src_test_java_org_rmb_JunitDataDrivenTest.java%2B-%2BSpring%2BTool%2BSui.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="856" data-original-width="1021" height="536" src="https://4.bp.blogspot.com/-wz_62ooLgsY/WtNbZcdHI-I/AAAAAAADAYg/3JD2QB-MwWwp4xqzYd1w1O4kJaKaaaakgCEwYBhgL/s640/2018-04-16%2B00_00_51-CygwinJavaUtils_src_test_java_org_rmb_JunitDataDrivenTest.java%2B-%2BSpring%2BTool%2BSui.png" width="640" /></a></div>
 
 <p>One of the most important advantages of JUnit in Eclipse over TestNG is that you can run individual test cases by right-clicking on the one you want to re-run and select "Run" or "Debug" (<a href="http://robertmarkbramprogrammer.blogspot.com.au/2018/04/debug-testng-data-driven-tests-when-you.html">TestNG would re-run the whole lot</a>).</p>
 
-![eclipse-run-individual-test.png](/assets/technical/images/2018/eclipse-run-individual-test.png)
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-FLDsMbhBXqI/WtNTEUqhYHI/AAAAAAADAYM/dvxP0v5JbFgh8dy_pC2u78e_T94KYC-dACLcBGAs/s1600/2018-04-15%2B23_25_47-Temp.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="383" data-original-width="1024" height="238" src="https://1.bp.blogspot.com/-FLDsMbhBXqI/WtNTEUqhYHI/AAAAAAADAYM/dvxP0v5JbFgh8dy_pC2u78e_T94KYC-dACLcBGAs/s640/2018-04-15%2B23_25_47-Temp.png" width="640" /></a></div>
 
 <p>Here is version 1 the full test case, incorporating the method being tested.</p>
 
@@ -207,7 +209,7 @@ public class JunitDataDrivenTest {
             Arguments.of("Any string matches any string.", "(.*)", "xyz", "xyz") //
             , Arguments.of("Pick year digits out of a date.", "[0-9]{2}/[0-9]{2}/([0-9]{4})", "31/12/2032", "2032") //
             , Arguments.of("No digits found.", "[0-9]+", "not a digit", null) //
-            , Arguments.of("First two words.", "(?&lt;firstTwoWords&gt;\\w+ \\w+) .*", "abc xyz one two", "abc xyz") //
+            , Arguments.of("First two words.", "(?<firstTwoWords>\\w+ \\w+) .*", "abc xyz one two", "abc xyz") //
             , Arguments.of("Bad regex.", "([0-9+)", "123", "PatternSyntaxException: (?s)Unclosed character class.*") //
       );
    }
@@ -297,7 +299,8 @@ public void testFilesFromDirectoriesAndPattern(final String label, final String 
 
 <p>The unit test now passes in all cases.</p>
 
-![eclipse-all-tests-pass.png](/assets/technical/images/2018/eclipse-all-tests-pass.png)
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://2.bp.blogspot.com/-nZEGOszJd_g/WtNiCncnTWI/AAAAAAADAYs/u4Ols07WdBkn4zTblm2M6lev9rNf-2UYACLcBGAs/s1600/2018-04-16%2B00_29_54-CygwinJavaUtils_src_test_java_org_rmb_JunitDataDrivenTest.java%2B-%2BSpring%2BTool%2BSui.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="856" data-original-width="1021" height="268" src="https://2.bp.blogspot.com/-nZEGOszJd_g/WtNiCncnTWI/AAAAAAADAYs/u4Ols07WdBkn4zTblm2M6lev9rNf-2UYACLcBGAs/s320/2018-04-16%2B00_29_54-CygwinJavaUtils_src_test_java_org_rmb_JunitDataDrivenTest.java%2B-%2BSpring%2BTool%2BSui.png" width="320" /></a></div>
 
 <p>Here is the final version of the full test case, incorporating exception testing.</p>
 
