@@ -5,7 +5,7 @@ tags: [content assist,content completion,eclipse]
 date: 2007-06-12 01:01:01 +1000
 ---
 
-> Log4J: duplicate Lines in output? [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2007/06/log4j-duplicate-lines-in-output.html).
+> Fix a common problem in Log4J: duplicate Lines in output. [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2007/06/log4j-duplicate-lines-in-output.html).
 
 <p>Ever see duplicate lines in your log4j output? Something like this perhaps:</p>
 

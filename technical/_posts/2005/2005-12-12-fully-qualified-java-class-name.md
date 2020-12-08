@@ -5,7 +5,7 @@ tags: [bash,cygwin,script]
 date: 2005-12-12 01:01:01 +1000
 ---
 
-> Take a Java class name and output the fully qualified Java name (package + class name). [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2005/12/fully-qualified-java-class-name.html).
+> Take a Java class name and output the fully qualified Java name: package name plus class name. [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2005/12/fully-qualified-java-class-name.html).
 
 <p><b>Purpose.</b> Take a Java class name and output the fully qualified Java name (package + class name). </P><p><b>Input.</b> A valid Java class name. You should be able to do the following search with it: "find . -name ClassName.java". </P><p><b>Output.</b> Fully qualified Java class name, output to the console and to the system clipboard. </P><p>Code: </P>
 

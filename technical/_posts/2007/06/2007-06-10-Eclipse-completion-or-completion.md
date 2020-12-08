@@ -5,7 +5,7 @@ tags: [content assist,content completion,eclipse]
 date: 2007-06-10 02:01:01 +1000
 ---
 
-> Eclipse: content assist or completion? [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2007/06/eclipse-completion-or-completion.html).
+> Eclipse: modify content assist to offer code completion. [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2007/06/eclipse-completion-or-completion.html).
 
 <p>Wonderful IDEs like Eclipse offer control+space content assist presenting a drop-down list of tokens that match what you have typed in so far.</p>
 
