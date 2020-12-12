@@ -42,12 +42,18 @@ date: 2007-06-20 01:01:01 +1000
 <p><b>Example 1:</b></p>
 
 <!-- 
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s1600-h/uExample1.PNG"><img style="cursor:pointer; cursor:hand;" src="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s400/uExample1.PNG" border="0" alt=""id="BLOGGER_PHOTO_ID_5080353065211937074" /></a>
- -->
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" 
+    href="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s1600-h/uExample1.PNG">
+  <img style="cursor:pointer; cursor:hand;" 
+      src="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s400/uExample1.PNG" 
+      border="0" alt=""id="BLOGGER_PHOTO_ID_5080353065211937074" />
+</a>
+-->
 
 <div class="separator" style="clear: both; text-align: center;">
   <a href="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s1600-h/uExample1.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
-    <img border="0" data-original-height="383" data-original-width="1024" height="238" src="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s400/uExample1.PNG" width="640" />
+    <img border="0" data-original-height="350" data-original-width="608" height="230" width="400"
+        src="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s400/uExample1.PNG" />
   </a>
 </div>
 
@@ -61,15 +67,20 @@ date: 2007-06-20 01:01:01 +1000
 <p><b>Example 2</b></p>
 
 <!-- 
-<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s1600-h/uExample2.PNG"><img style="cursor:pointer; cursor:hand;" src="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s400/uExample2.PNG" border="0" alt=""id="BLOGGER_PHOTO_ID_5080354435306504514" /></a>
- -->
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" 
+    href="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s1600-h/uExample2.PNG">
+  <img style="cursor:pointer; cursor:hand;" 
+      src="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s400/uExample2.PNG" 
+      border="0" alt=""id="BLOGGER_PHOTO_ID_5080354435306504514" />
+</a>
+-->
 
 <div class="separator" style="clear: both; text-align: center;">
   <a href="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s1600-h/uExample2.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
-    <img border="0" data-original-height="383" data-original-width="1024" height="238" src="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s400/uExample2.PNG" width="640" />
+    <img border="0" data-original-height="291" data-original-width="591" height="197" width="400"
+        src="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s400/uExample2.PNG" />
   </a>
 </div>
-
 
 <ol>
   <li>Find all .java files whose class name ends with 'department' or 'location'. Open two specific files in that list. </li>
