@@ -39,7 +39,17 @@ date: 2007-06-20 01:01:01 +1000
 
 <p><b>Output.</b> List of file paths/names. Opens files in your editor of choice. </p>
 
-<p><b>Example 1:</b> </p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s1600-h/uExample1.PNG"><img style="cursor:pointer; cursor:hand;" src="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s400/uExample1.PNG" border="0" alt=""id="BLOGGER_PHOTO_ID_5080353065211937074" /></a>
+<p><b>Example 1:</b></p>
+
+<!-- 
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s1600-h/uExample1.PNG"><img style="cursor:pointer; cursor:hand;" src="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s400/uExample1.PNG" border="0" alt=""id="BLOGGER_PHOTO_ID_5080353065211937074" /></a>
+ -->
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s1600-h/uExample1.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+    <img border="0" data-original-height="383" data-original-width="1024" height="238" src="http://4.bp.blogspot.com/_jwApeiH4frk/RoEKMimGQTI/AAAAAAAAADw/kbUGzNUnSuc/s400/uExample1.PNG" width="640" />
+  </a>
+</div>
 
 <ol>
   <li>List all files in the directory tree with 'department' in their name/path. </li>
@@ -48,7 +58,18 @@ date: 2007-06-20 01:01:01 +1000
   <li>List the same files as above but offer to open them. Open all of them. </li>
 </ol>
 
-<p><b>Example 2</b> </p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s1600-h/uExample2.PNG"><img style="cursor:pointer; cursor:hand;" src="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s400/uExample2.PNG" border="0" alt=""id="BLOGGER_PHOTO_ID_5080354435306504514" /></a>
+<p><b>Example 2</b></p>
+
+<!-- 
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s1600-h/uExample2.PNG"><img style="cursor:pointer; cursor:hand;" src="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s400/uExample2.PNG" border="0" alt=""id="BLOGGER_PHOTO_ID_5080354435306504514" /></a>
+ -->
+
+<div class="separator" style="clear: both; text-align: center;">
+  <a href="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s1600-h/uExample2.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+    <img border="0" data-original-height="383" data-original-width="1024" height="238" src="http://3.bp.blogspot.com/_jwApeiH4frk/RoELcSmGQUI/AAAAAAAAAD4/yS0P0hS39rY/s400/uExample2.PNG" width="640" />
+  </a>
+</div>
+
 
 <ol>
   <li>Find all .java files whose class name ends with 'department' or 'location'. Open two specific files in that list. </li>
