@@ -12,7 +12,10 @@ Here is my take on this job. It is a small script to open Windows Explorer from 
 </P>
 
 <p>
-<b>Updates.</b><br>
+<b>Updates.</b>
+</p>
+
+<p>
 7/07/2009 1:09:35 PM. Updated handling of paths according to <a href="http://www.blogger.com/profile/10415943317265697903">Igor Mikushkin</a>'s suggestion in the comments - thanks Igor!
 </p>
 
