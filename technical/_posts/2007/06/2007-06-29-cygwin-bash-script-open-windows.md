@@ -5,7 +5,7 @@ tags: [bash,cygwin,script,windows explorer]
 date: 2007-06-29 01:01:01 +1000
 ---
 
-> IBM Rational Application Developer for WebSphere Software had a problem where periodically it fails to build a project, stating that it cannot delete `log4j.properties`. [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2007/06/cygwin-bash-script-open-windows.html).
+> A Cygwin bash script to open Windows Explorer (or whatever tool is your Windows Explorer replacement) from any given path, or the current directory no parameter is given. [Mirror of this Blogger post](https://robertmarkbramprogrammer.blogspot.com/2007/06/cygwin-bash-script-open-windows.html).
  
 <P>
 Here is my take on this job. It is a small script to open Windows Explorer from any path I give it, or the current directory if I don't specify a path.
