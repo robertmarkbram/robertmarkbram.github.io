@@ -76,7 +76,7 @@ Some perspectives don't have have this shortcut enabled. To enable it, go to Win
 </div>
 
 <P>
-Alt + Q, Q brings up the "Show View" view, that allows you select any Eclipse view - and use * or ? to wild-card for their names.
+<kbd>Alt + Q, Q</kbd> brings up the "Show View" view, that allows you select any Eclipse view - and use * or ? to wild-card for their names.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -87,7 +87,7 @@ Alt + Q, Q brings up the "Show View" view, that allows you select any Eclipse vi
 </div>
 
 <P>
-This is the Alt + Shift + Q menu. By default It contains short-cuts to various views. Use the up/down keys to go through the options or press the final key in the key combinations listed.
+This is the <kbd>Alt + Shift + Q</kbd> menu. By default It contains short-cuts to various views. Use the up/down keys to go through the options or press the final key in the key combinations listed.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -98,7 +98,7 @@ This is the Alt + Shift + Q menu. By default It contains short-cuts to various v
 </div>
 
 <P>
-This is the Alt + Shift + X menu. It contains short-cuts to various actions and works in the same way as the menu above.
+This is the <kbd>Alt + Shift + X</kbd> menu. It contains short-cuts to various actions and works in the same way as the menu above.
 </P>
 
 <P>
