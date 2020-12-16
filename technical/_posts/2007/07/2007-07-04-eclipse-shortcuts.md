@@ -116,7 +116,7 @@ Press <b>F3</b> while your cursor is on a variable, type or method reference and
 <div class="separator" style="clear: both; text-align: center;">
   <a href="http://2.bp.blogspot.com/_jwApeiH4frk/Rooxqyx-W5I/AAAAAAAAAFc/E8q1JXXaLJo/s1600-h/tech7.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
     <img border="0" data-original-width="406" data-original-height="326" width="200" height="160" 
-        src="http://4.bp.blogspot.com/_jwApeiH4frk/RooxUSx-W4I/AAAAAAAAAFU/r2G9mwFBVs8/s1600-h/tech7.PNG" />
+        src="http://2.bp.blogspot.com/_jwApeiH4frk/Rooxqyx-W5I/AAAAAAAAAFc/E8q1JXXaLJo/s200/tech7.PNG" />
   </a>
 </div>
 
