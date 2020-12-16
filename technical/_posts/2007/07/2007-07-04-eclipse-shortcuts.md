@@ -238,10 +238,8 @@ Sourceforge has a set of <a href="http://eclipse-tools.sourceforge.net/shortcuts
 </div>
 
 <P>
-Check out your own shortcuts! Window > Preferences > General > Keys.
+Check out your own shortcuts! Window &gt; Preferences &gt; General &gt; Keys.
 </P>
-
-<a href="http://2.bp.blogspot.com/_jwApeiH4frk/RopIYyx-W-I/AAAAAAAAAGE/OvQZ9M7sSWs/s1600-h/tech12.PNG"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://2.bp.blogspot.com/_jwApeiH4frk/RopIYyx-W-I/AAAAAAAAAGE/OvQZ9M7sSWs/s200/tech12.PNG" border="0" alt=""id="BLOGGER_PHOTO_ID_5082954720226466786" /></a>
 
 <div class="separator" style="clear: both; text-align: center;">
   <a href="http://2.bp.blogspot.com/_jwApeiH4frk/RopIYyx-W-I/AAAAAAAAAGE/OvQZ9M7sSWs/s1600-h/tech12.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
