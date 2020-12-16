@@ -42,7 +42,7 @@ This article is about some of the very cool short-cuts that I use most, plus how
 </div>
 
 <P>
-<kbd>Control + Shift + T</kbd> to open up any type loaded by your projects. You can use <kbd>*</kbd> and <kbd>?</kbd> as wild-cards here.
+<kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> to open up any type loaded by your projects. You can use <code>*</code> and code>?</code> as wild-cards here.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -53,7 +53,7 @@ This article is about some of the very cool short-cuts that I use most, plus how
 </div>
 
 <P>
-The same can be done for resources with <kbd>Control + Shift + R</kbd>. Resources is the superset of files i.e. you can find Java files through this shortcut too - by typing *.java for example.
+The same can be done for resources with <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>. Resources is the superset of files i.e. you can find Java files through this shortcut too - by typing <code>*.java</code> for example.
 </P>
 
 <P>
@@ -76,7 +76,7 @@ Some perspectives don't have have this shortcut enabled. To enable it, go to Win
 </div>
 
 <P>
-<kbd>Alt + Q, Q</kbd> brings up the "Show View" view, that allows you select any Eclipse view - and use * or ? to wild-card for their names.
+<kbd>Alt</kbd> + <kbd>Q</kbd>, <kbd>Q</kbd> brings up the "Show View" view, that allows you select any Eclipse view - and use <code>*</code> or <code>?</code> to wild-card for their names.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -87,7 +87,7 @@ Some perspectives don't have have this shortcut enabled. To enable it, go to Win
 </div>
 
 <P>
-This is the <kbd>Alt + Shift + Q</kbd> menu. By default It contains short-cuts to various views. Use the up/down keys to go through the options or press the final key in the key combinations listed.
+This is the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Q</kbd> menu. By default It contains short-cuts to various views. Use the up/down keys to go through the options or press the final key in the key combinations listed.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -98,7 +98,7 @@ This is the <kbd>Alt + Shift + Q</kbd> menu. By default It contains short-cuts t
 </div>
 
 <P>
-This is the <kbd>Alt + Shift + X</kbd> menu. It contains short-cuts to various actions and works in the same way as the menu above.
+This is the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> menu. It contains short-cuts to various actions and works in the same way as the menu above.
 </P>
 
 <P>
@@ -110,7 +110,7 @@ This is the <kbd>Alt + Shift + X</kbd> menu. It contains short-cuts to various a
 <h1><a name="Navigate_or_Search_within_the_Workspace"></a>Navigate or Search within the Workspace</h1>
 
 <P>
-Press <b>F3</b> while your cursor is on a variable, type or method reference and you will open up the declaration of the variable, type or method. If you use it to click on a reference to code held in an external Jar file, you might need to attach the source (if you have it) for this to work.
+Press <b><kbd>F3</kbd></b> while your cursor is on a variable, type or method reference and you will open up the declaration of the variable, type or method. If you use it to click on a reference to code held in an external Jar file, you might need to attach the source (if you have it) for this to work.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -121,7 +121,7 @@ Press <b>F3</b> while your cursor is on a variable, type or method reference and
 </div>
 
 <P>
-Perhaps the single most useful tool for jumping around a class or just examining what is in a class is the Quick Outline view, <kbd>Control + O</kbd>.
+Perhaps the single most useful tool for jumping around a class or just examining what is in a class is the Quick Outline view, <kbd>Control</kbd> + <kbd>O</kbd>.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -132,7 +132,7 @@ Perhaps the single most useful tool for jumping around a class or just examining
 </div>
 
 <P>
-Type in the beginning of a method, again using <kbd>?</kbd> and <kbd>*</kbd> wild cards, and the list shortens. This is the fastest way to move between methods in a large class. <kbd>Control + O</kbd>, type enough to narrow the methods down, arrow down and press enter. Much faster than the scrolling through a class or even scrolling through the outline view itself.
+Type in the beginning of a method, again using <code>?</code> and <code>*</code> wild cards, and the list shortens. This is the fastest way to move between methods in a large class. <kbd>Control</kbd> + <kbd>O</kbd>, type enough to narrow the methods down, arrow down and press enter. Much faster than the scrolling through a class or even scrolling through the outline view itself.
 </P>
 
 <P>
@@ -140,11 +140,11 @@ There are, of course, plenty of short-cuts I use that don't involve bringing up 
 </P>
 
 <P>
-Use <kbd>Alt + Left</kbd> and <kbd>Alt + Right</kbd> to navigate backward and forward respectively through your code "navigation" history. <kbd>Control + Q</kbd> visits the last edit location.
+Use <kbd>Alt</kbd> + <kbd>Left</kbd> and <kbd>Alt</kbd> + <kbd>Right</kbd> to navigate backward and forward respectively through your code "navigation" history. <kbd>Control</kbd> + <kbd>Q</kbd> visits the last edit location.
 </P>
 
 <P>
-<kbd>Control + Alt + G</kbd> will do a file search on whatever token your cursor is within. Warning: by default, this will do a search through all files in your workspace so it might take a bit of time. Alternatively, select and copy that token, press <kbd>Control + H</kbd> (for the search dialog), select the tab for whatever search you want, fill it out, press enter and wait for those results. Most likely it will get your results faster, but requires a few more mouse and/or keyboard actions!
+<kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> will do a file search on whatever token your cursor is within. Warning: by default, this will do a search through all files in your workspace so it might take a bit of time. Alternatively, select and copy that token, press <kbd>Control</kbd> + <kbd>H</kbd> (for the search dialog), select the tab for whatever search you want, fill it out, press enter and wait for those results. Most likely it will get your results faster, but requires a few more mouse and/or keyboard actions!
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -155,7 +155,7 @@ Use <kbd>Alt + Left</kbd> and <kbd>Alt + Right</kbd> to navigate backward and fo
 </div>
 
 <P>
-<kbd>Control + Alt + H</kbd> is one of my favourites: it will show the call hierarchy for whatever method your cursor happens to be within. This brings up the Call Hierarchy view and shows each chain of parseable method calls that reaches the current method: this is the caller hierarchy.
+<kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>H</kbd> is one of my favourites: it will show the call hierarchy for whatever method your cursor happens to be within. This brings up the Call Hierarchy view and shows each chain of parseable method calls that reaches the current method: this is the caller hierarchy.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -193,11 +193,11 @@ Press F4 within a class to show the Hierarchy view, which shows an outline for t
 <h1><a name="Navigate_between_Editors_Views_Perspectives"></a>Navigate between Editors, Views, Perspectives</h1>
 
 <P>
-<kbd>Control + F6</kbd> and <kbd>Control + Shift + F6</kbd> to switch between all the editors you have open in a workspace. Personally I don't like having to use two hands for this, so I set <kbd>Control + Tab</kbd> and <kbd>Control + Shift + Tab</kbd> to this - see <a href="#Show_me_the_shortcuts">Show me the shortcuts!</a>.
+<kbd>Control</kbd> + <kbd>F6</kbd> and <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> to switch between all the editors you have open in a workspace. Personally I don't like having to use two hands for this, so I set <kbd>Control</kbd> + <kbd>Tab</kbd> and <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd> to this - see <a href="#Show_me_the_shortcuts">Show me the shortcuts!</a>.
 </P>
 
 <P>
-You can use a split screen function to display multiple editors at once. Do this by opening multiple files at once and clicking and dragging the tab of an editor to the left/right/tob/bottom of the editor view. You can switch between views in a particular partition using <kbd>Control + E</kbd>.
+You can use a split screen function to display multiple editors at once. Do this by opening multiple files at once and clicking and dragging the tab of an editor to the left/right/tob/bottom of the editor view. You can switch between views in a particular partition using <kbd>Control</kbd> + <kbd>E</kbd>.
 </P>
 
 <div class="separator" style="clear: both; text-align: center;">
@@ -208,14 +208,14 @@ You can use a split screen function to display multiple editors at once. Do this
 </div>
 
 <P>
-Press <kbd>Control + Shift + E</kbd> to bring up the "Switch to Editor" view. It has some nice functionality to let you manage editors you have open. But to be honest, if you need it, you are probably working on too many files at once!
+Press <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> to bring up the "Switch to Editor" view. It has some nice functionality to let you manage editors you have open. But to be honest, if you need it, you are probably working on too many files at once!
 </P>
 <P>
-<kbd>Control + F7</kbd> and <kbd>Control + Shift + F7</kbd> switches between views. I like this one enough that I changed it <kbd>Control + ~</kbd> and <kbd>Control + Shift + ~</kbd> - see <a href="#Show_me_the_shortcuts">Show me the shortcuts!</a>
+<kbd>Control</kbd> + <kbd>F7</kbd> and <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> switches between views. I like this one enough that I changed it <kbd>Control</kbd> + <kbd>~</kbd> and <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>~</kbd> - see <a href="#Show_me_the_shortcuts">Show me the shortcuts!</a>
 </P>
 
 <P>
-<kbd>Control + F8</kbd> and <kbd>Control + Shift + F8</kbd> switches between perspectives.
+<kbd>Control</kbd> + <kbd>F8</kbd> and <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>F8</kbd> switches between perspectives.
 </P>
 
 <P>
@@ -253,7 +253,7 @@ Go to the Modify tab to set your own shortcuts. I use this a lot.
 </P>
 
 <P>
-In particular I set up the <kbd>Shift + Alt + Q, X</kbd> short cut to add all of the views that I switch between regularly. For example, to set a shortcut for the console, select the view as shown to the left. Put the cursor into the Key Sequence Name field, press <kbd>Shift + Alt + Q</kbd>, then <kbd>C</kbd>. Press Add to set the shortcut. Now, <kbd>Shift + Alt + Q, C</kbd> will open the Console View.
+In particular I set up the <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd>, <kbd>X</kbd> short cut to add all of the views that I switch between regularly. For example, to set a shortcut for the console, select the view as shown to the left. Put the cursor into the Key Sequence Name field, press <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd>, then <kbd>C</kbd>. Press Add to set the shortcut. Now, <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd>, <kbd>C</kbd> will open the Console View.
 </P>
 
 <P>
