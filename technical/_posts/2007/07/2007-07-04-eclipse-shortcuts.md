@@ -20,7 +20,7 @@ This article is about some of the very cool short-cuts that I use most, plus how
 <b>13/11/2007 12:31:46 PM</b> Updated layout of this tutorial.
 </P>
 
-<h1 name="index_shortcuts_post">Index</h1>
+<h1 id="index_shortcuts_post">Index</h1>
 
 <ol>
   <li><a href="#Open_Files_in_the_Workspace">Open Files in the Workspace</a></li>
