@@ -11,12 +11,12 @@ kbd {
    padding: .1em .6em;
    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
    font-size: 11px;
-   line-height: var(--s-prose-line-height);
+   line-height: 1.4;
    color: var(--black-800);
    text-shadow: 0 1px 0 var(--white);
    background-color: var(--black-075);
    border: 1px solid var(--black-300);
    border-radius: 3px;
-   box-shadow: 0 1px 1px rgba(12,13,14,0.15), inset 0 1px 0 0 #fff;
-   overflow-wrap: break-word;
+   box-shadow: 0 1px 1px rgba(12,13,14,0.15),inset 0 1px 0 0 var(--white);
+   white-space: nowrap;
 }
